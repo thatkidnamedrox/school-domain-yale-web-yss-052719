@@ -20,7 +20,7 @@ class School
     grades = @roster.keys.sort
     grades.map do |grade|
       students = @roster[grade].sort
-      {grade, students}
+      {grade => students}
     end
   end
 
