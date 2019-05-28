@@ -18,6 +18,10 @@ class School
 
   def sort
     grades = @roster.keys.sort
+    grades.map do |grade|
+      students = @roster[grade].sort
+      {grade, students}
+    end
   end
 
 end
