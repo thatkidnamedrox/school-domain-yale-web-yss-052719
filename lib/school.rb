@@ -23,6 +23,7 @@ class School
       students = @roster[grade].sort
       sorted_school[grade] = students
     end
+    sorted_school
   end
 
 end
