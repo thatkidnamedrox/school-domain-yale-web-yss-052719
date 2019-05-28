@@ -18,9 +18,10 @@ class School
 
   def sort
     grades = @roster.keys.sort
-    grades.map do |grade|
+    sorted_school = {}
+    grades.each do |grade|
       students = @roster[grade].sort
-      {grade => students}
+      sorted_school[grade] = students
     end
   end
 
